@@ -33,4 +33,7 @@ public class FucturaAula1Controller {
   }
 
   @PostMapping("/pessoa")
-  public ResponseEntity<Pessoa> postPessoa(@RequestBody Pes
+  public ResponseEntity<Pessoa> postPessoa(@RequestBody Pessoa pessoa){
+    return ResponseEntity.ok().body(pessoa);
+  }
+}
